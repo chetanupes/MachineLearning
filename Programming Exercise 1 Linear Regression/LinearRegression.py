@@ -46,7 +46,7 @@ def gradientdescent(X, y, theta, alpha, iters):
             theta[j, 0] = theta[j, 0] - (alpha / n) * sum((d))
             print(theta[:])
         J_his[i, :] = cost(X, y, theta)
-    plot(J_his) #plotting cost function to see its shape
+    plot(J_his) #plotting cost function to see its shape. A decrecing trend with the increasing iteration is the desired trend
     show()
     return (theta, J_his)
 gradientdescent(X, y, theta, alpha, iters)
